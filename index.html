@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Font-Awesome-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- BoxIcons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- For Header -->
+    <header> 
+        <div class="headArea container g-0">
+            <div class="contactNumbers">
+                <a href="#" class="numOne">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="m-0">+92 12 345 678 910</p>
+                </a>
+                <a href="#" class="numTwo">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p class="m-0">+92-332-1234567</p>
+                </a>
+            </div>
+
+            <div class="socialLinks">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- For Navbar  -->
+    <nav>
+        <div class="navbar container g-0 p-0">
+            <div class="upperNavArea row m-0 p-0"> 
+
+                <div class="menuSearch col-4 g-0">
+                    <button type="menu" class="menuBtn">
+                        <i class='bx bx-menu-alt-left'></i>
+                    </button>
+                    <button type="button" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="brandName col-4 g-0">
+                    <h1 class="m-0">Influential Apparels</h1>
+                </div>
+                
+                <div class="brandLogo col-4 g-0">
+                    <img src="./Media/Images/Other/Logo.png" alt="Logo">
+                </div>
+                
+                <div class="searchLogInCart col-4 g-0">
+                    <abbr title="Search">
+                        <button type="button" class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </abbr>
+                    <abbr title="LogIn">
+                        <button type="button" class="logIn">
+                            <i class="fa-regular fa-user"></i>
+                        </button>
+                    </abbr>
+                    <abbr title="Your Cart">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="counter">
+                                <p class="m-0">0</p>
+                            </span>
+                        </a>
+                    </abbr>
+                </div>
+            </div>
+
+            <div class="lowerNavArea row p-0 m-0">
+                <!-- Navigations -->
+                <ul class="navigations col-12 m-0">
+                    <!-- Home -->
+                    <li class="navItem home"><a href="#" class="navLink">Home</a></li>
+
+                    <!-- Shirts -->
+                    <li class="navItem Shirts">
+                        <a href="#" class="navLink Shirts_Link">Shirts</a>
+                        <!-- Dropdown Shirts -->
+                        <ul class="dropdown_Shirts_Navigations">
+                            <li class="Formal_Shirts">
+                                <a href="#" class="Formal_Shirts_Link">
+                                    Formal Shirts
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <ul class="dropdown_Formal_Shirts_Navigations">
+                                    <li><a href="#">Plain Shirts</a></li>
+                                    <li><a href="#">Check Shirts</a></li>
+                                    <li><a href="#">Stripe Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Designer Shirts</a></li>
+                            <li><a href="#">Printed Shirts</a></li>
+                        </ul> 
+                    </li>
+
+                    <!-- T-Shirts -->
+                    <li class="navItem T_Shirts">
+                        <a href="#" class="navLink T_Shirts_Link">T-Shirts</a>
+                        <!-- Dropdown T-Shirts -->
+                        <ul class="dropdown_T_Shirts_Navigations">
+                            <li><a href="#">Polo T-Shirts</a></li>
+                            <li><a href="#">Round Neck T-Shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pants -->
+                    <li class="navItem Pants">
+                        <a href="#" class="navLink Pants_Link">Pants</a>
+                        <!-- Dropdown Pants -->
+                        <ul class="dropdown_Pants_Navigations">
+                            <li><a href="#">Formal Pants</a></li>
+                            <li><a href="#">Cotton Pants</a></li>
+                            <li><a href="#">Jeans Pants</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Trousers -->
+                    <li class="navItem Trousers">
+                        <a href="#" class="navLink Trousers_Link">Trousers</a>
+                        <!-- Dropdown Trousers -->
+                        <ul class="dropdown_Trousers_Navigations">
+                            <li><a href="#">Casual Trousers</a></li>
+                            <li><a href="#">Formal Trousers & T-shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Ethinic-Wear -->
+                    <li class="navItem Ethinic_Wear">
+                        <a href="#" class="navLink Ethinic_Wear_Link">Ethinic Wear</a>
+                        <!-- Dropdown Ethinic-Wear -->
+                        <ul class="dropdown_Ethinic_Wear_Navigations">
+                            <li><a href="#">Kameez Shalwar</a></li>
+                            <li><a href="#">Kurta Pajama</a></li>
+                            <li><a href="#">Waistcoats</a></li>
+                            <li><a href="#">Fabrics</a></li>
+                            <li><a href="#">Kurta's</a></li>
+                            <li><a href="#">Shalwar & Panjama</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Suiting -->
+                    <li class="navItem Suiting">
+                        <a href="#" class="navLink Suiting_Link">Suiting</a>
+                        <!-- Dropdown Suiting -->
+                        <ul class="dropdown_Suiting_Navigations">
+                            <li><a href="#">Suit</a></li>
+                            <li><a href="#">Coat</a></li>
+                            <li><a href="#">Western Waistcoat</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Watches -->
+                    <li class="navItem Watches">
+                        <a href="#" class="navLink Watches_Link">Watches</a>
+                    </li>
+
+                    <!-- Footwear -->
+                    <li class="navItem Footwear">
+                        <a href="#" class="navLink Footwear_Link">Footwear</a>
+                        <!-- Dropdown Footwear -->
+                        <ul class="dropdown_Footwear_Navigations">
+                            <li><a href="#">Formal Shoes</a></li>
+                            <li><a href="#">Casual Shoes</a></li>
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Sandals</a></li>
+                            <li><a href="#">Loafers</a></li>
+                            <li><a href="#">Chappals & Slippers</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Accessories -->
+                    <li class="navItem Accessories">
+                        <a href="#" class="navLink Accessories_Link">Accessories</a>
+                        <!-- Dropdown Accessories -->
+                        <ul class="dropdown_Accessories_Navigations">
+                            <li><a href="#">Ties</a></li>
+                            <li><a href="#">Belt</a></li>
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">Pocket Square</a></li>
+                            <li><a href="#">Socks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- For Sidebar Behind Overlay -->
+    <div class="overlay hide"></div>
+
+    <!-- For Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <!-- Sidebar Header -->
+        <div class="sidebarHeader row p-0 g-0">
+            <div class="sideLogo col-8 g-0">
+                <img src="./Media/Images/Other/Logo - Copy.png" alt="">
+            </div>
+            <div class="sidebarClose col-4 g-0">
+                <button type="button" class="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigations -->
+        <div class="sidebarNav row g-0">
+            <ul class="sideNavigations col-12 m-0">
+
+                <!-- Home -->
+                <li class="sideItem sideHome g-0 m-0">
+                    <a href="#" class="sideLinks">Home</a>
+                </li>
+
+                <!-- Shirts -->
+                <li class="sideItem sideShirts">
+                    <a href="#" class="sideLinks">Shirts</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- <i class="fa-solid fa-angle-up"></i> -->
+                    </button>
+
+                    <!-- Dropdown Sidebar Shirts -->
+                    <div class="dropdown_sideItem dropdown_sideShirts hide">
+                        <div class="dropdown_Item dropdownShirtItem FormalShirts">
+                            <a href="#" class="dropdown_Link dropdownShirtLink">Formal Shirts</a>
+                            <button type="button" class="sideDropdownBtn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+
+                            <!-- Dropdown Sidebar Formal Shirts -->
+                            <div class="dropdown_sideItem dropdown_sideFormalShirts hide">
+                                <div class="dropdown_Item dropdownFormalShirtItem PlainShirts">
+                                    <a href="#" class="dropdown_Link dropdownFormalShirtLink">Plain Shirts</a>
+                                </div>
+
+                                <div class="dropdown_Item dropdownFormalShirtItem CheckShirts">
+                                    <a href="#" class="dropdown_Link dropdownFormalShirtLink">Check Shirts</a>
+                                </div>
+
+                                <div class="dropdown_Item dropdownFormalShirtItem StripeShirts">
+                                    <a href="#" class="dropdown_Link dropdownFormalShirtLink">Stripe Shirts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown_Item dropdownShirtItem DesignerShirts">
+                            <a href="#" class="dropdown_Link dropdownShirtLink">Designer Shirts</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownShirtItem PrintedShirts">
+                            <a href="#" class="dropdown_Link dropdownShirtLink">Printed Shirts</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- T-Shirts -->
+                <li class="sideItem sideT_Shirts g-0 m-0">
+                    <a href="#" class="sideLinks">T-Shirts</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar T-Shirts -->
+                    <div class="dropdown_sideItem dropdown_sideT_Shirts hide">
+                        <div class="dropdown_Item dropdownT_ShirtItem PoloT_Shirts">
+                            <a href="#" class="dropdown_Link dropdownT_ShirtLink">Polo T-Shirts</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownT_ShirtItem RoundNeckT_Shirts">
+                            <a href="#" class="dropdown_Link dropdownT_ShirtLink">Round Neck T-Shirts</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Pants -->
+                <li class="sideItem sidePants g-0 m-0">
+                    <a href="#" class="sideLinks">Pants</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Pants -->
+                    <div class="dropdown_sideItem dropdown_sidePants hide">
+                        <div class="dropdown_Item dropdownPantItem FormalPants">
+                            <a href="#" class="dropdown_Link dropdownPantLink">Formal Pants</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownPantItem CottonPants">
+                            <a href="#" class="dropdown_Link dropdownPantLink">Cotton Pants</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownPantItem JeansPants">
+                            <a href="#" class="dropdown_Link dropdownPantLink">Jeans Pants</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Trousers -->
+                <li class="sideItem sideTrousers g-0 m-0">
+                    <a href="#" class="sideLinks">Trousers</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Trousers -->
+                    <div class="dropdown_sideItem dropdown_sideTrousers hide">
+                        <div class="dropdown_Item dropdownTrouserItem CasualTrousers">
+                            <a href="#" class="dropdown_Link dropdownTrouserLink">Casual Trousers</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownTrouserItem FormalTrousers">
+                            <a href="#" class="dropdown_Link dropdownTrouserLink">Formal Trousers</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Ethinic_Wear -->
+                <li class="sideItem sideEthinic_Wear g-0 m-0">
+                    <a href="#" class="sideLinks">Ethinic Wear</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Ethinic_Wear -->
+                    <div class="dropdown_sideItem dropdown_sideEthinic_Wear hide">
+                        <div class="dropdown_Item dropdownEthinic_WearItem KameezShalwar">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Kameez Shalwar</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownEthinic_WearItem KurtaPajama">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Kurta Pajama</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownEthinic_WearItem Waiscoats">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Waiscoats</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownEthinic_WearItem Fabrics">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Fabrics</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownEthinic_WearItem Kurta's">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Kurta's</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownEthinic_WearItem Shalwar&Pajama">
+                            <a href="#" class="dropdown_Link dropdownEthinic_WearLink">Shalwar & Pajama</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Suiting -->
+                <li class="sideItem sideSuiting g-0 m-0">
+                    <a href="#" class="sideLinks">Suiting</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Suiting -->
+                    <div class="dropdown_sideItem dropdown_sideSuiting hide">
+                        <div class="dropdown_Item dropdownSuitingItem Suit">
+                            <a href="#" class="dropdown_Link dropdownSuitingLink">Suit</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownSuitingItem Coat">
+                            <a href="#" class="dropdown_Link dropdownSuitingLink">Coat</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownSuitingItem WesternWaiscoat">
+                            <a href="#" class="dropdown_Link dropdownSuitingLink">Western Waiscoat</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Watches -->
+                <li class="sideItem sideWatches g-0 m-0">
+                    <a href="#" class="sideLinks">Watches</a>
+                </li>
+
+                <!-- Footwear -->
+                <li class="sideItem sideFootwear g-0 m-0">
+                    <a href="#" class="sideLinks">Footwear</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Footwear -->
+                    <div class="dropdown_sideItem dropdown_sideFootwear hide">
+                        <div class="dropdown_Item dropdownFootwearItem FormalShoes">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Formal Shoes</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownFootwearItem CasualShoes">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Casual Shoes</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownFootwearItem Sneakers">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Sneakers</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownFootwearItem Sandals">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Sandals</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownFootwearItem Loafers">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Loafers</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownFootwearItem Chappals&Slippers">
+                            <a href="#" class="dropdown_Link dropdownFootwearLink">Chappals & Slippers</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Accessories -->
+                <li class="sideItem sideAccessories g-0 m-0">
+                    <a href="#" class="sideLinks">Accessories</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <!-- Dropdown Sidebar Accessories -->
+                    <div class="dropdown_sideItem dropdown_sideAccessories hide">
+                        <div class="dropdown_Item dropdownAccessoriesItem Ties">
+                            <a href="#" class="dropdown_Link dropdownAccessoriesLink">Ties</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownAccessoriesItem Belt">
+                            <a href="#" class="dropdown_Link dropdownAccessoriesLink">Belt</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownAccessoriesItem Wallet">
+                            <a href="#" class="dropdown_Link dropdownAccessoriesLink">Wallet</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownAccessoriesItem PocketSquare">
+                            <a href="#" class="dropdown_Link dropdownAccessoriesLink">Pocket Square</a>
+                        </div>
+
+                        <div class="dropdown_Item dropdownAccessoriesItem Socks">
+                            <a href="#" class="dropdown_Link dropdownAccessoriesLink">Socks</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- Sidebar LogInSearchCart -->
+            <div class="sidebarLogInSearch">
+                <div class="sideUserItem sideLogIn">
+                    <a href="#" class="sideUserLink sideLogInLink">
+                        <i class="fa-regular fa-user"></i>
+                        LogIn / Register
+                    </a>
+                </div>
+                <div class="sideUserItem sideSearch">
+                    <a href="#" class="sideUserLink sideSearchLink">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sidebar Social Links -->
+            <div class="sideSocialLinks">
+                <div class="sideSocialItem">
+                    <a href="#" class="sideSclLnk">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="sideSclLnk">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="sideSclLnk">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- For Js Link -->
+    <script src="app.js"></script>
+    <!-- For Bootstrap Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
